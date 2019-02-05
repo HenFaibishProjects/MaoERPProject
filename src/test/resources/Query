@@ -1,0 +1,4 @@
+select firstName , lastName , schooleName , name_ma_type
+       from matypetotrainer ma join employee emp on ma.trainerId = emp.personID
+                               join diploma di on di.DiplomaID = ma.diplomaID
+                               join matypetable mat on mat.id_MA_type = ma.maId;
